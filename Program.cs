@@ -1,4 +1,4 @@
-﻿// using static System.Console;
+﻿using static System.Console;
 
 // Console.Clear(); 
 // Console.Write("Введите число: ");
@@ -13,8 +13,6 @@
 
 
 // Вывод дня недели
-
-// using static System.Console;
 
 // Clear();
 // Write("Введеите число от 1 до 7: ");
@@ -40,18 +38,16 @@
 // Напишите программу, которая на вход принимает одно число (N), 
 // а на выходе показывает все целые числа в промежутке от -N до N.
 
-using static System.Console;
+// Clear();
+// Write("Введеите число: ");
+// int num1=Convert.ToInt32(ReadLine());
+// int num2=-num1;
 
-Clear();
-Write("Введеите число от 1 до 7: ");
-int num1=Convert.ToInt32(ReadLine());
-int num2=-num1;
-
-while(num2<=num1)
-{
-    Write($"{num2}");
-    num2++;
-}
+// while(num2<=num1)
+// {
+//     Write($"{num2}");
+//     num2++;
+// }
 
 
 // 1. Напишите программу, которая принимает на вход трёхзначное число 
@@ -59,3 +55,10 @@ while(num2<=num1)
 // 456 -> 6
 // 782 -> 2
 // 918 -> 8
+
+
+Clear();
+Write("Введеите число: ");
+int num1=Convert.ToInt32(ReadLine());
+
+WriteLine(num1%10);
