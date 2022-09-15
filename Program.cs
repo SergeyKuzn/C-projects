@@ -14,26 +14,48 @@
 
 // Вывод дня недели
 
+// using static System.Console;
+
+// Clear();
+// Write("Введеите число от 1 до 7: ");
+// int num1=Convert.ToInt32(ReadLine());
+// if (num1==1){
+//     WriteLine("monday");}
+// if (num1==2){
+//     WriteLine("Tuesday");}
+// if (num1==3){
+//     WriteLine("Wednesday");}
+// if (num1==4){
+//     WriteLine("Thursday");}
+// if (num1==5){
+//     WriteLine("Friday");}
+// if (num1==6){
+//     WriteLine("Saturday");}
+// if (num1==7){
+//     WriteLine("Sunday");}
+// if (num1>7 || num1<1){
+//     WriteLine("Такого дня недели не существует!");}
+
+
+// Напишите программу, которая на вход принимает одно число (N), 
+// а на выходе показывает все целые числа в промежутке от -N до N.
+
 using static System.Console;
 
 Clear();
 Write("Введеите число от 1 до 7: ");
 int num1=Convert.ToInt32(ReadLine());
-if (num1==1){
-    WriteLine("monday");}
-if (num1==2){
-    WriteLine("Tuesday");}
-if (num1==3){
-    WriteLine("Wednesday");}
-if (num1==4){
-    WriteLine("Thursday");}
-if (num1==5){
-    WriteLine("Friday");}
-if (num1==6){
-    WriteLine("Saturday");}
-if (num1==7){
-    WriteLine("Sunday");}
-if (num1>7 || num1<1){
-    WriteLine("Такого дня недели не существует!");}
+int num2=-num1;
+
+while(num2<=num1)
+{
+    Write($"{num2}");
+    num2++;
+}
 
 
+// 1. Напишите программу, которая принимает на вход трёхзначное число 
+// и на выходе показывает **последнюю** цифру этого числа.
+// 456 -> 6
+// 782 -> 2
+// 918 -> 8
